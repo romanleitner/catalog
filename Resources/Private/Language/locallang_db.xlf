@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-02-04T11:37:26Z" product-name="catalog">
+		<header/>
+		<body>
+			<trans-unit id="tx_catalog_domain_model_product">
+				<source>Product</source>
+			</trans-unit>
+			<trans-unit id="tx_catalog_domain_model_product.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_catalog_domain_model_product.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_catalog_domain_model_product.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_catalog_domain_model_product.price_bundle">
+				<source>Price Bundle</source>
+			</trans-unit>
+			<trans-unit id="tx_catalog_domain_model_item">
+				<source>Item</source>
+			</trans-unit>
+			<trans-unit id="tx_catalog_domain_model_item.nr_licences">
+				<source>Nr Licences</source>
+			</trans-unit>
+			<trans-unit id="tx_catalog_domain_model_item.nr_years">
+				<source>Nr Years</source>
+			</trans-unit>
+			<trans-unit id="tx_catalog_domain_model_item.price">
+				<source>Price</source>
+			</trans-unit>
+			<trans-unit id="flexforms_tab.settings" xml:space="preserve">
+				<source>Settings</source>
+			</trans-unit>
+			<trans-unit id="flexforms_general.product" xml:space="preserve">
+				<source>Select product to display</source>
+			</trans-unit>            
+		</body>
+	</file>
+</xliff>

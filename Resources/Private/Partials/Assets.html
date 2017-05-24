@@ -1,0 +1,10 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+
+<f:section name="css">
+  <v:asset.style path="//cdn1-prodint.esetstatic.com/typo3conf/ext/eset_base/Resources/Public/css/styles.css" external="1" rewrite="0" standalone="1" movable="0" />
+</f:section>
+
+<f:section name="Javascript">
+  <v:asset.script path="{f:uri.resource(path:'Js/jquery-3.1.1.min.js')}" standalone="1" movable="1" rewrite="false" name="jquery"></v:asset.script>
+  <v:asset.script path="{f:uri.resource(path:'Js/script.js')}" standalone="1" movable="1" rewrite="false" dependencies="jquery" name="script"></v:asset.script>
+</f:section>

@@ -1,0 +1,15 @@
+
+plugin.tx_catalog_eset {
+	view {
+		# cat=plugin.tx_catalog_eset/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:catalog/Resources/Private/Templates/
+		# cat=plugin.tx_catalog_eset/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:catalog/Resources/Private/Partials/
+		# cat=plugin.tx_catalog_eset/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:catalog/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_catalog_eset//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

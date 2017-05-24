@@ -1,0 +1,103 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+
+<f:flashMessages />
+
+<v:page.header>
+  <f:render partial="Assets" section="css" />
+  <f:render partial="Assets" section="Javascript" />
+</v:page.header>
+
+<script>
+var currentUrl = '<v:page.absoluteUrl />';
+</script>
+
+<div id="hero-content" class="hero without-scroll-to-next skin-product-card-dep skin-inverse product-card-dep product-card-b2c" style="min-height: 703px;">
+
+  <div id="content-c25184" class="csc-default">
+    <h1 class="card-title"><f:translate key="tx_catalog_domain_model_product.headerText" /></h1>
+  
+    <div class="ribbon skin-large" style="display: none;"></div>
+    
+    <div class="card-content">
+    
+      <div class="card-image">
+        <f:image image="{product.image}" maxWidth="119" maxHeight="170" alt="{product.name}" />
+      </div>
+      
+      <h3 class="card-title-product">{product.name}</h3>
+      <p class="bodytext">{product.description}</p>
+              
+      <form data-module="ui/price-configurator-dep" data-api-pricings="" class="form form-price-configurator" action="https://www.eset.com/us/home/antivirus/?no_cache=1&amp;tx_esetproducts_productcard%5Baction%5D=productCardAjax&amp;tx_esetproducts_productcard%5Bcontroller%5D=Sku" method="post" data-processed="true" data-initialized="ui/price-configurator-dep">
+        
+        <div class="row">
+          <div class="col col-xs-6 col-sm-4">
+            <div class="form-group form-group-quantity form-group-select">
+              <label for="qty-IwS2fg2s" class="form-label">Users</label>
+              <div class="rangeified-ui rangeified-ui-of-select form-control select-users no-transform"><span class="display">1</span><span class="knob decrement inactive"><i>–</i></span><span class="knob increment"><i>+</i></span></div>
+              <select class="form-control rangeified select-users no-transform" id="qty-IwS2fg2s" name="tx_esetproducts_productcard[users]">
+                <option value="1" selected="selected">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="col col-xs-6 col-sm-4">
+            <div class="form-group form-group-quantity form-group-select">
+              <label for="years-oKuXOMWE" class="form-label">Years</label>
+              <div class="rangeified-ui rangeified-ui-of-select form-control select-years no-transform"><span class="display">1</span><span class="knob decrement inactive"><i>–</i></span><span class="knob increment"><i>+</i></span></div>
+              <select class="form-control rangeified select-years no-transform" id="years-oKuXOMWE" name="tx_esetproducts_productcard[years]">
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </select>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-sm-4"> 
+            <div class="form-group form-group-result configurator-result-price">
+              <span data-price="$39.99" class="price">
+              <span class="currency">$</span>
+              <span class="amount">39.</span>
+              <sup class="cents">99</sup></span></div>
+          </div>
+        </div>
+        
+        <div class="configurator-result-notice"><p>Save $20 with 2 years</p></div>
+        <input class="form-control" type="hidden" name="tx_esetproducts_productcard[productid]" value="158">
+        <input type="hidden" name="internalid" value="1797" class="internalid">
+        <input type="hidden" name="promocode" value="" class="promocode">
+        <input type="hidden" name="qty" value="1" class="qty">
+      </form>
+      
+      
+      <!-- Button for Netsuite -->
+      <div class="product-card-ctas clearfix clear-left">
+        <a class="btn" href="#">Add to Cart</a>
+      </div>
+    </div>
+    
+    <div class="nav nav-card-links">
+    
+    </div>
+  </div>
+
+</div>
+
+
+</f:section>

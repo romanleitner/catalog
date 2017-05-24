@@ -1,0 +1,45 @@
+
+plugin.tx_catalog_eset {
+	view {
+		templateRootPaths.0 = {$plugin.tx_catalog_eset.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_catalog_eset.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_catalog_eset.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_catalog_eset.persistence.storagePid}
+	}
+}
+
+plugin.tx_catalog._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-catalog table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-catalog table th {
+		font-weight:bold;
+	}
+
+	.tx-catalog table td {
+		vertical-align:top;
+	}
+
+	.typo3-messages .message-error {
+		color:red;
+	}
+
+	.typo3-messages .message-ok {
+		color:green;
+	}
+
+)
